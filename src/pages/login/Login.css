@@ -1,0 +1,35 @@
+button {
+  padding: 4px 8px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.login-page form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  max-width: 300px;
+  border: 1px solid #212121;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.login-page form input {
+  width: 90%;
+  padding: 4px;
+}
+
+.login-page form label {
+  text-align: left;
+  font-weight: 700;
+}
+
+.login-page .error {
+  color: red;
+}

@@ -1,0 +1,40 @@
+header {
+  color: #fff;
+  width: 100%;
+  background-color: var(--first-clr);
+  padding-block: 1rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  font-size: 1.5rem;
+  list-style-type: none;
+}
+
+.default-link {
+  text-decoration: none;
+}
+
+.default-link:hover {
+  text-decoration: underline;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+header a:link,
+header a:visited {
+  color: white;
+}
+
+.visible {
+  visibility: none;
+}
+
+.invisible {
+  visibility: hidden;
+}

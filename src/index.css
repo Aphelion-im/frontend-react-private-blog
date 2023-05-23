@@ -1,13 +1,97 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        4.3 Work
+        4.4 Services
+        4.5 Contact
+        4.6 Footer
+    5. Media Queries
+////////////////////////*/
+
+/* Global styles */
+:root {
+  --first-clr: #ca5b1a;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--first-clr);
+}
+
+html {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+}
+
+body {
+  font-size: 16px;
+  background-color: whitesmoke;
+  font-family: 'Poppins', sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+main {
+  flex-grow: 1;
+  padding: 2rem 0 4rem 0;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+/* Remove the typical button styling on Mac
+For these buttons a background-color and color must be defined */
+button {
+  /* Remove background-color and color if required */
+  background-color: #bbb;
+  color: #222;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover {
+  filter: brightness(110%);
+}
+
+/* Reusables  */
+.outer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row; /* Row = width */
+  justify-content: center;
+}
+
+.inner-container {
+  flex: 0 1 1000px;
+  display: flex;
+  flex-direction: column; /* Column = height */
+  margin-inline: 20px;
 }
