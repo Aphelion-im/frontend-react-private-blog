@@ -1,0 +1,15 @@
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+.articles-list {
+  font-size: 1rem;
+}
+
